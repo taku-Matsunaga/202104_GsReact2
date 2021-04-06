@@ -38,7 +38,7 @@ const getDataRakuten = async (keyword) => {
   // cloud functionsから実行する場合には地域の設定が必要になるため，`country=JP`を追加している
   const requestUrl =
     "https://app.rakuten.co.jp/services/api/IchibaItem/Search/20170706?applicationId="
-  const appID = '1035157271681990292';
+  const appID = 'yourID';
   const result = await requestPromise(`${requestUrl}${appID}&keyword=${keyword}`);
   return result;
 };
